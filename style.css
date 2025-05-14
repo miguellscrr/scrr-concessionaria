@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 6px 0;
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    letter-spacing: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3 ease;
+}
+
+nav a:hover {
+    color: rgb(9, 157, 202);
+}
+
+.modelos {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.modelos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.carros-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carro-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.carro-card:hover {
+    transform: scale(1.03);
+}
+
+.carro-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.carro-card h3 {
+    font-size: 1.4rem;
+    margin: 15px 0 10px;
+}
+
+.carro-card p {
+    padding: 0 15px 20px;
+    font-size: 0.95rem;
+    color: #555;
+}
