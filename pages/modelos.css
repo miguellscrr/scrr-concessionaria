@@ -16,7 +16,7 @@ header {
     padding: 6px 0;
 }
 
-header .container {
+header .pageup {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -48,29 +48,58 @@ nav a:hover {
 }
 
 html, body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .site {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
-  flex: 1;
+    flex: 1;
 }
 
 footer {
-  background-color: black;
-  color: white;
-  text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.carros-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.carro-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
   padding: 1rem;
-  font-size: 0.9rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.carro-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.carro-card:hover {
+  transform: scale(1.05);
 }
